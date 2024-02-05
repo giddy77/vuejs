@@ -1,18 +1,23 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-  <LoginForm />
+  <!-- <LoginForm /> -->
+  <!-- <SignUp /> -->
+  <LifeCycle />
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import LoginForm from './components/LoginForm'
-
+// import LoginForm from './components/LoginForm'
+// import SignUp from './components/SignUp.vue'
+import LifeCycle from './components/LifeCycle'
 export default {
   name: 'App',
   components: {
     // HelloWorld
-    LoginForm
+    // LoginForm
+    // SignUp
+    LifeCycle
   }
 }
 </script>

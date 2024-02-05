@@ -1,6 +1,7 @@
 <template>
 <h1>This is the login form</h1>
-<input type="text" v-model="formdata.username" placeholder="enter name"><br><br>
+<h2>{{ uppercaseName }}</h2>
+<input type="text"  placeholder="enter name"><br><br>
 <input type="password" v-model="formdata.password" placeholder="enter password"><br><br>
 
 <button v-on:click="login">login</button>
@@ -14,8 +15,15 @@ export default{
             formdata:{
                 username:null,
                 password:null
-            }
+            },
+            Componentname:'loginform'
 }
+    },
+    computed:
+    {
+        uppercaseName(){
+            return this.Componentname.toUpperCase();
+        }
     },
     methods:
    {

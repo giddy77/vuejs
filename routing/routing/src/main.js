@@ -5,10 +5,12 @@ import App from './App.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from './components/HomePage'
 import AboutPage from './components/AboutPage'
+import UserList from './components/UserList'
 
 const routes = [
     {path: '/', component: HomePage},
-    {path: '/about', component:AboutPage}
+    {path: '/about', component:AboutPage},
+    {path: '/users/:id', component:UserList}
 ]
 
 
